@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { catchError } from 'rxjs/operators'
 import { ApifService } from './apif.service';
+import { DisplayComponent } from './display/display.component';
   
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+    FormComponent,
+    DisplayComponent
    
   ],
   imports: [
