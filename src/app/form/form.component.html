@@ -6,14 +6,18 @@
           <h4>Github User and Repo Search</h4>
         </div>
         <div class="card-body">
-          <form class="form-inline" (submit)="searchUserInfo">
+          <form class="form-inline" (submit)="searchUserInfo()">
             <div class="form-group">
-              <input [(ngModel)]= "githubUserQuery" name="user" maxlength="40" type="search" class="form-control"  placeholder="Enter Github username"/>              
-              <!--<input type="checkbox" class="form-check-input" id="exampleCheck1"> 
-              <label class="form-check-label" for="exampleCheck1"> I am aware I will only see the user's public repositories</label>-->
-              <input type="submit" value="Search" class="btn btn-warning"/>
-          </div>
+                <input [(ngModel)]="githubUserQuery" name="user" type="search" class="form-control" placeholder="Github user">
+            </div>
+            <div>
+                <input  size="40" type="submit" value="search" class="btn btn-secondary btn-sm">
+            </div>
         </form>
+      </div>
+      <!--testing -->
+      <div>
+        {{githubProfile.name}}
       </div>
     </div>
     </div>
