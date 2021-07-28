@@ -1,6 +1,6 @@
-<div class="container mt-3">
+<div class="container mt-4">
   <div class="row">
-    <div class="col">
+    <div class="col md-3">
       <div class="card">
         <div class="card-header"> 
           <h4>Github User and Repo Search</h4>
@@ -8,7 +8,7 @@
         <div class="card-body">
           <form class="form-inline" (submit)="searchUserInfo">
             <div class="form-group">
-              <input [(ngModel)]= "githubUserQuery" name="user" size= "50" type="search" class="form-control"  placeholder="Enter Github username"/>              
+              <input [(ngModel)]= "githubUserQuery" name="user" maxlength="40" type="search" class="form-control"  placeholder="Enter Github username"/>              
               <!--<input type="checkbox" class="form-check-input" id="exampleCheck1"> 
               <label class="form-check-label" for="exampleCheck1"> I am aware I will only see the user's public repositories</label>-->
               <input type="submit" value="Search" class="btn btn-warning"/>
@@ -20,7 +20,7 @@
   </div>
   <div class="row">
     <div class="col">
-      <app-display></app-display>
+      <app-display [githubProfile]= "githubProfile"></app-display>
     </div>
   </div>
 </div>
