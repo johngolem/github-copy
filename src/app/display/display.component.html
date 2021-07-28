@@ -6,9 +6,9 @@
                     <img [src]="githubProfile.avatar_url" alt="" class="img-fluid">
                 </div>
                 <div class="card-body">
-                    <p> name of user</p>
-                    <h5>{{githubProfile.name}}</h5>
-                    <p>{{githubProfile.followers}}</p>
+                    <h5>Name:{{githubProfile.name}}</h5>
+                    <p>Followers:{{githubProfile.followers}}</p>
+                    <p>Public Repos:{{githubProfile.public_repos}}</p>
                 </div>
             </div>
         </div>
@@ -16,6 +16,7 @@
             <div class="card">
                 <div class="card-header">
                     <h4>User's repositories</h4>
+                    <p>{{githubProfile.full_name}}</p>
                 </div>
                 <div class="card-body">
                     
