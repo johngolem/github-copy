@@ -9,13 +9,15 @@ import { FormsModule } from '@angular/forms';
 import { catchError } from 'rxjs/operators'
 import { ApifService } from './apif.service';
 import { DisplayComponent } from './display/display.component';
+import { ReposComponent } from './repos/repos.component';
   
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    DisplayComponent
+    DisplayComponent,
+    ReposComponent
    
   ],
   imports: [

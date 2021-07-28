@@ -15,16 +15,15 @@
             </div>
         </form>
       </div>
-      <!--testing -->
-      <div>
-        {{githubProfile.name}}
-      </div>
     </div>
     </div>
   </div>
   <div class="row">
     <div class="col">
       <app-display [githubProfile]= "githubProfile"></app-display>
+    </div>
+    <div class="col">
+      <app-repos [githubRepos]="githubRepos"></app-repos>
     </div>
   </div>
 </div>

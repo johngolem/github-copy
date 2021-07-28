@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class DisplayComponent implements OnInit {
 
   @Input() githubProfile:any;
+  @Input () githubRepos:any;
 
   constructor() { }
 

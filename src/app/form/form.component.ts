@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApifService } from '../apif.service';
 
-
-
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
