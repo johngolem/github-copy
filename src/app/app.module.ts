@@ -7,7 +7,8 @@ import { FormComponent } from './form/form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { catchError } from 'rxjs/operators'
-
+import { ApifService } from './apif.service';
+  
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { catchError } from 'rxjs/operators'
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ApifService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
