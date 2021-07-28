@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { catchError } from 'rxjs/operators'
 
 
 @NgModule({
