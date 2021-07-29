@@ -1,17 +1,16 @@
-<div class="col mt-4">
+<div *ngIf="githubRepos" class="col mt-4">
     <div class="card">
         <div class="card-header">
             <h4>User's repositories</h4>
+        </div>
             <div class="card-body">
-           <!--     <ul class="list-group" index="i">
-                    <li *ngFor="let repo of githubRepos" class="list-group-item">
-                    Repo Name:{{githubRepo.name}}
-                    </li>
-                    <li class="list-group-item">
-                    Repo url:{{repo.html_url}}
-                    </li> 
-            </ul> -->
-            {{githubRepos}}
+             <ul class="list-group">
+                <li *ngFor="let repo of githubRepos" class="list-group-item d-flex justify content between">
+                    <a [href]="repo.html_url" class="text-primary font-weight-bold" target="blank">{{repo.name}}</a>
+                    <span class = "badge badge-danger">Repo Name:{{repo.description}}</span>
+                    <span class = "badge badge-danger">Repo url:{{repo.html_url}}</span>
+                </li>
+            </ul>
             </div>
         </div>
     </div>
