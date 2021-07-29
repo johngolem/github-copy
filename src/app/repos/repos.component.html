@@ -3,7 +3,7 @@
         <div class="card-header">
             <h4>User's repositories</h4>
         </div>
-            <div class="card-body">
+            <div class="card-body text-white">
              <ul class="list-group">
                 <li *ngFor="let repo of githubRepos" class="list-group-item d-flex justify content between">
                     <a [href]="repo.html_url" class="text-primary font-weight-bold" target="blank">{{repo.name}}</a>
